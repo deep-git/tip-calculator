@@ -5,8 +5,7 @@ function App() {
   return (
       <div className="main">
         <div className="outer_text">
-          <p>SPLI</p>
-          <p>TTER</p>
+          <h1>SPLI<br/>TTER</h1>
         </div>
         <Calculator/>
       </div>

@@ -39,7 +39,7 @@ body {
   margin-bottom: 60px;
 }
 
-.outer_text > p {
+.outer_text > h1 {
   color: var(--display-background);
   font-weight: bold;
   letter-spacing: 0.5em;
