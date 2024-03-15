@@ -57,7 +57,7 @@ export function Calculator() {
             setZero(false);
         }
 
-        if (bill !== "" && tipAmount !== "" && numPeople !== "" && numPeople !== "0" && isValidNumber(numPeople) && parseInt(numPeople) !== 0) {
+        if (bill !== "" && tipAmount !== "" && numPeople !== "" && numPeople !== "0" && isValidNumber(numPeople) && parseInt(bill) > 0 && parseFloat(tipAmount) > 0 && parseInt(numPeople) > 0 && parseInt(numPeople) !== 0) {
             let totalTipAmount = (bill * (tipAmount / 100)) / numPeople;
             let totalAmount = (bill / numPeople) + totalTipAmount;
 
