@@ -1,0 +1,55 @@
+:root {
+  --primary-background: #c5e4e7;
+  --calculator-background: #ffffff;
+  --display-background: #00474b;
+  --input-background: #f3f8fb;
+  
+  --label-text: #6a7b7d;
+  --display-text: #25c4ae;
+  --display-label-text: #d9eeee;
+  --display-label-side: #74a6a9;
+  --input-placeholder-color: #a2b7b8;
+
+  --reset-button: #0d686d;
+  --reset-button-text: #055f64;
+  --reset-button-hover: #9fe8df;
+  --reset-button-hover-text: #00474b;
+
+  --reset-button-active: #25c4ae;
+}
+
+body {
+  background: var(--primary-background);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.outer_text {
+  margin-bottom: 60px;
+}
+
+.outer_text > p {
+  color: var(--display-background);
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding-top: 50px;
+    justify-content: start;
+  }
+}
+
